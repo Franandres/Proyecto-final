@@ -300,4 +300,224 @@ img {
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
 
+    img {
+        width: 11.25rem;
+        height: 11.25rem;
+    }
+
+    .header-container h1 {
+        font-size: 9.375rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .nav-menu ul {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        gap: 4.375rem;
+        margin-bottom: .625rem;
+    }
+    
+    .nav-menu ul li a {
+        font-size: .9375rem;
+    }
+
+
+
+    .main-remeras div {
+        width: 25rem;
+    }
+    
+    .main-remeras div h2 {
+        font-size: 1.875rem;
+    }
+    
+    .main-remeras div p {
+        font-size: .75rem;
+    }
+    
+    .main-buzos div {
+        width: 25rem;
+    }
+    
+    .main-buzos div h2 {
+        font-size: 1.875rem;
+    }
+    
+    .main-buzos div p {
+        font-size: .75rem;
+    }
+
+    .main-bolsos div {
+        width: 25rem;
+    }
+    
+    .main-bolsos div h2 {
+        font-size: 1.875rem;
+    }
+    
+    .main-bolsos div p {
+        font-size: .75rem;
+    }
+
+
+
+    .container-ayuda {
+        width: 9.375rem;
+    }
+
+    .container-ayuda h3 {
+        font-size: 1.125rem;
+    }
+    
+    .container-ayuda div p {
+        font-size: .9375rem;
+    }
+    
+    .container-contactanos {
+        width: 15.625rem;
+    }
+    
+    .container-contactanos h3 {
+        font-size: 1.125rem;
+    }
+    
+    .container-contactanos h4 {
+        font-size: 1rem;
+    }
+    
+    .container-contactanos div p {
+        font-size: .9375rem;
+    }
+    
+    .container-redes {
+        width: 9.375rem;
+    }
+    
+    .container-redes h3 {
+        font-size: 1.125rem;
+    }
+    
+    .container-redes ul li a {
+        font-size: .9375rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    img {
+        width: 9.375rem;
+        height: 9.375rem;
+    }
+
+    .header-container h1 {
+        font-size: 9.375rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .nav-menu ul {
+        gap: 1.25rem;
+    }
+    
+    .nav-menu ul li a {
+        font-size: .875rem;
+    }
+
+
+    .main-remeras {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-remeras div {
+        width: 14.375rem;
+    }
+    
+    .main-remeras div h2 {
+        font-size: 1.25rem;
+    }
+    
+    .main-remeras div p {
+        font-size: .625rem;
+    }
+
+    .main-buzos {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-buzos div {
+        width: 14.375rem;
+    }
+    
+    .main-buzos div h2 {
+        font-size: 1.25rem;
+    }
+    
+    .main-buzos div p {
+        font-size: .625rem;
+    }
+
+    .main-bolsos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-bolsos div {
+        width: 14.375rem;
+    }
+    
+    .main-bolsos div h2 {
+        font-size: 1.25rem;
+    }
+    
+    .main-bolsos div p {
+        font-size: .625rem;
+    }
+
+
+
+    .container-ayuda {
+        width: 6.25rem;
+    }
+
+    .container-ayuda h3 {
+        font-size: .875rem;
+    }
+    
+    .container-ayuda div p {
+        font-size: .625rem;
+    }
+    
+    .container-contactanos {
+        width: 9.375rem;
+    }
+    
+    .container-contactanos h3 {
+        font-size: .875rem;
+    }
+    
+    .container-contactanos h4 {
+        font-size: .75rem;
+    }
+    
+    .container-contactanos div p {
+        font-size: .625rem;
+    }
+    
+    .container-redes {
+        width: 6.25rem;
+    }
+    
+    .container-redes h3 {
+        font-size: .875rem;
+    }
+    
+    .container-redes ul li a {
+        font-size: .625rem;
+    }
+
+}
