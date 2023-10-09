@@ -1,0 +1,45 @@
+.header-container {
+    @include flex (column, none, center, none, none);
+    background-color: $background;
+    color: $font-color;
+    h1 {
+        @include font (12.5rem, none);
+        margin-bottom: 1.25rem;
+        @include md {
+            font-size: 9.375rem;
+            margin-bottom: 1.25rem;
+        }
+        @include sm {
+            font-size: 9.375rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+
+.nav-menu {
+    ul {
+        @include flex (row, none, none, space-between, 6.25rem);
+        margin-bottom: .625rem;
+        li {
+            a {
+                @include font (1.5625rem, none);
+                color: $font-color;
+                @include md {
+                    font-size: .9375rem;
+                }
+                @include sm {
+                    font-size: .875rem;
+                }
+            }
+        }
+        @include md {
+            @include flex (row, none, none, space-between, 4.375rem);
+            margin-bottom: .625rem;
+        }
+        @include sm {
+            gap: 1.25rem;
+        }
+    }
+}
+
+

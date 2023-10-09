@@ -1,0 +1,71 @@
+.footer-container {
+    @include flex (row, space-evenly, flex-start, none, none);
+    color: $font-color;
+    background-color: $background;
+}
+
+.container-ayuda {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    width: 12.5rem;
+    h3 {
+        @include font (1.5625rem, none);
+        padding-bottom: .625rem;
+        @include md {
+            font-size: 1.125rem;
+        }
+        @include sm {
+            font-size: .875rem;
+        }
+    }
+    div {
+        p {
+            @include font (1.25rem, none);
+            @include md {
+                font-size: .9375rem;
+            }
+            @include sm {
+                font-size: .625rem;
+            }
+        }
+    }
+    @include md {
+        width: 9.375rem;
+    }
+    @include sm {
+        width: 6.25rem;
+    }
+}
+
+.container-redes {
+    @extend .container-ayuda;
+    ul {
+        li {
+            a {
+                color: $font-color;
+            }
+        }
+    }
+}
+
+.container-contactanos {
+    @extend .container-ayuda;
+    width: 18.75rem;
+    @include md {
+        width: 15.625rem;
+    }
+    @include sm {
+        width: 9.375rem;
+    }
+    h4 {
+        @include font (1.25rem, none);
+        margin-bottom: .3125rem;
+        @include md {
+            font-size: 1rem;
+        }
+        @include sm {
+            font-size: .75rem;
+        }
+    }
+}
+

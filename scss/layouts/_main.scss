@@ -1,0 +1,68 @@
+.main-container {
+    @include flex (column, none, center, none, none);
+    background-color: $background;
+}
+
+.main-remeras {
+    @include flex (row, space-evenly, center, none, none);
+    @include font (none, center);
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    width: 90%;
+    background-color: $font-color;
+    height: 18.75rem;
+    border-radius: 1.875rem;
+    div {
+        @include flex (column, none, center, none, none);
+        width: 43.75rem;
+        h2 {
+            @include font (2.5rem, none);
+            padding-bottom: .9375rem;
+            @include md {
+                font-size: 1.875rem;
+            }
+            @include sm {
+                font-size: 1.25rem;
+            }
+        }
+        p {
+            @include font (1.25rem, none);
+            @include md {
+                font-size: .75rem;
+            }
+            @include sm {
+                font-size: .625rem;
+            }
+        }
+        @include md {
+            width: 25rem;
+        }
+        @include sm {
+            width: 14.375rem;
+        }
+    }
+    @include sm {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.main-buzos {
+    @extend .main-remeras;
+}
+
+.main-bolsos {
+    @extend .main-remeras;
+}
+
+.main-nosotros {
+    @extend .main-remeras;
+}
+
+.main-comoinicio {
+    @extend .main-remeras;
+}
+
+.main-ubicaciones {
+    @extend .main-remeras;
+}

@@ -1,0 +1,128 @@
+.grid-container {
+    @include grid (15.625rem 1fr, none, none, none, "sidebar areaproductos" "sidebar areaproductos");
+    margin: 3.125rem;
+    @include md {
+        @include grid (6.25rem 37.5rem, none, none, none, "sidebar areaproductos" "sidebar areaproductos");
+        margin: 1.5625rem;
+    }
+    @include sm {
+        @include grid (6.25rem 18.75rem, none, none, none, "sidebar areaproductos" "sidebar areaproductos");
+        margin: .9375rem;
+    }
+}
+
+.container-productos {
+    @include grid (repeat(3, 1fr), repeat(3, 1fr), center, 1.25rem, 
+    "producto1 producto2 producto3" 
+    "producto4 producto5 producto6" 
+    "producto7 producto8 producto9");
+    grid-area: areaproductos;
+    width: 90%;
+    div {
+        h2 {
+            font-size: 1.25rem;
+            padding-top: .625rem;
+            padding-bottom: .625rem;
+            @include md {
+                font-size: .9375rem;
+            }
+            @include sm {
+                font-size: .625rem;
+            }
+        }
+        p {
+            font-size: 1.875rem;
+            padding-bottom: .625rem;
+            @include md {
+                font-size: 1.5625rem;
+            }
+            @include sm {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    @include md {
+        @include grid (repeat(2, 1fr), repeat(5, 1fr), center, .9375rem, 
+        "producto1 producto2" 
+        "producto3 producto4" 
+        "producto5 producto6" 
+        "producto7 producto8" 
+        "producto9 .");
+    }
+    @include sm {
+        @include grid (12.5rem, repeat(9, 1fr), end, 10px,
+        "producto1"
+        "producto2"
+        "producto3"
+        "producto4"
+        "producto5"
+        "producto6"
+        "producto7"
+        "producto8"
+        "producto9");
+
+    }
+}
+
+.producto1 {
+    grid-area: producto1;
+}
+.producto2 {
+    grid-area: producto2;
+}
+.producto3 {
+    grid-area: producto3;
+}
+.producto4 {
+    grid-area: producto4;
+}
+.producto5 {
+    grid-area: producto5;
+}
+.producto6 {
+    grid-area: producto6;
+}
+.producto7 {
+    grid-area: producto7;
+}
+.producto8 {
+    grid-area: producto8;
+}
+.producto9 {
+    grid-area: producto9;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-area: sidebar;
+    div {
+        h3 {
+            font-size: 1.25rem;
+            padding-bottom: .625rem;
+            @include md {
+                font-size: .9375rem;
+            }
+            @include sm {
+                font-size: .625rem;
+            }
+        }
+    }
+    .sidebar-order {
+        padding-bottom: 1.875rem;
+    }
+    .sidebar-size {
+        @extend .sidebar-order;
+    }
+    .sidebar-color {
+        @extend .sidebar-order;
+    }
+}
+
+
+
+
+
+
+
+

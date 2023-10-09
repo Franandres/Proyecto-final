@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 14.0625rem;
+    height: 14.0625rem;
+    border-radius: .9375rem;
+    @include md {
+        width: 11.25rem;
+        height: 11.25rem;
+    }
+    @include sm {
+        width: 9.375rem;
+        height: 9.375rem;
+    }
+}
